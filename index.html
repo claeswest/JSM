@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSM (Johann Sebastian Mozart)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>JSM</h1>
+    <p class="subtitle">Recreate Mozartian tone sequences</p>
+    <div id="pads">
+      <!-- Five tone pads C4–G4 -->
+      <button class="pad" data-tone="261.63"></button>
+      <button class="pad" data-tone="293.66"></button>
+      <button class="pad" data-tone="329.63"></button>
+      <button class="pad" data-tone="349.23"></button>
+      <button class="pad" data-tone="392.00"></button>
+    </div>
+    <div id="controls">
+      <button id="start-btn">Start</button>
+      <div id="level-display">Level: 0</div>
+      <div id="combo-display">Combo: 0</div>
+    </div>
+    <div id="modal" class="hidden">
+      <div class="modal-content">
+        <p>Your browser does not support Web Audio API.</p>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
